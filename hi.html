@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: #060501;
+            line-height:20px;
+            line-clamp: initial;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <form action="hi.php" method="post">
+        <h1><span style="background-color: aquamarine;">Log in</span></h1>
+        <div>
+            <label for="susername">Username:</label><br>
+            <input type="text" name="" id="username" spaceholder="name" minlength="5" maxlength="56" required>
+          <i class='bx  bx-user'></i> 
+
+        </div>
+        <div>
+            <label for="password">password:</label> <br>
+            <input type="password" name="" id="password" minlength="5" maxlength="56" required>
+            <i class='bx  bx-lock'></i> 
+
+            <div>
+            <label for="Email">Email:</label><br>
+            <input type="Email" name="" id="Email" minlength="5" maxlength="56" required>
+        </div>
+        <div>
+            <label for="phone">phone #:</label> <br>
+            <input type="phone" name="" id="phone" spaceholder="+250" minlength="5" maxlength="56" required>         
+        </div>
+        <div>
+            <label for="birthday"> Birthday:</label>
+        <input type="date" name="barthday" id="barthday">
+
+        </div>
+        <div>
+            <label for="quantity"> quantity:</label>
+            <input type="number" name="quantity" id="quantity" max="100" min="0" value="37">
+        </div>
+        <label for="title">Title:</label>
+        <label for="Mr">Mr</label>
+        <input type="radio" name="title" id="Mr">
+        <label for="Mr">Ms</label>
+        <input type="radio" name="title" id="Ms">
+        <label for="Mr">PHD</label>
+        <input type="radio" name="title" id="phd"><br>
+        <label for="pyment">Pyment:</label>
+        <select name="" id="">
+            <option value="2">visa</option>
+            <option value="4">mastercard</option>
+            <option value="1">giftcard</option>
+            <option value="3">studantcard</option>
+            <option value=""></option>
+        </select><br>
+        <label for="subscribe">Subscribe</label>
+        <input type="checkbox" name="subscribe" id="subscribe"><br>
+
+        <label for="comment">comment:</label><br>
+        <textarea name="comment" id="comment" rows="4" cols="25"></textarea><br>
+        <label for="file">file:</label><br>
+    <input type="file" name="image.png , image.jpg" id="" accept="image/png">       
+    </div>
+        <input type="reset" value="reset" style="background-color: brown; color: white; border-radius: 3px;"> <br>
+        <input type="submit" value="submit" type="reset" value="reset" style="background-color: brown; color: white; border-radius: 3px;">
+        <div>
+            <label for="comment">comment</label>
+            <textarea name="comment" id="comment" rows="3"></textarea>                
+        </div>
+    </form>
+</body>
+</html>
